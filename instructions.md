@@ -32,7 +32,7 @@ Create a Django web application with the following functionality:
 ### Front-End Requirements
 
 - You are free to choose how to style the front end, but it should be functional and user-friendly.
-- Feel free to use frameworks like Bootstrap, Tailwind, or custom CSS but include any custom requirements in requirements.txt.
+- Feel free to use frameworks like Bootstrap, Tailwind, or custom CSS but include any custom requirements in `requirements.txt`.
 
 ### Bonus Task (Optional)
 
@@ -77,8 +77,7 @@ Your submission will be evaluated based on the following criteria:
 3. **Testing**: Are there meaningful unit tests in place that cover key functionality? How well is the search functionality tested?
 4. **Front-end styling**: Is the UI clean, user-friendly, and functional?
 5. **Data Cleaning**: How well did you handle inconsistencies in the `device_name` column across the two tables?
-6. **README**: Is the README clear, and does it provide enough information to easily set up and run the project?
-7. **Bonus points**: For API integration (optional).
+6. **Bonus points**: For API integration (optional).
 
 ---
 
