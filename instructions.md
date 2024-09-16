@@ -54,7 +54,7 @@ The provided `tests.py` includes:
 - A test case for when a device exists only in **one** of the tables.
 - A test case for when a device is **not found** in either table.
 
-You can modify any of the existing test code or add new test cases as needed.
+You can modify any of the existing test code or add new test cases as needed. Important note - I have not provided the model classes for the two tables provided.
 
 ## Submission Requirements
 
@@ -69,7 +69,7 @@ You can modify any of the existing test code or add new test cases as needed.
    - Any suggestions or recommendations for how you would expand on this functionality further. 
 6. **Ensure your app runs without issues**: I should be able to set up and run the project easily using the provided instructions.
 7. Push your solution to your branch and **create a pull request**.
-8. Notify us via email when your task is complete.
+8. Notify me via email when your task is complete.
 
 ## Evaluation Criteria
 
