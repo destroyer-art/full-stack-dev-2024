@@ -1,4 +1,4 @@
-#Below is an example of a test case that tests the search functionality of the application. Feel free to make any edits you see fit.
+#Below is an example of a test case that tests the search functionality of the application. You can modify any of the existing test code or add new test cases as needed.
 
 from django.test import TestCase
 from .models import FdaData, EudamedData

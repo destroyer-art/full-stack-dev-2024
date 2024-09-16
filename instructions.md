@@ -31,8 +31,9 @@ Create a Django web application with the following functionality:
 
 ### Front-End Requirements
 
-- You are free to choose how to style the front end, but it should be functional and user-friendly.
-- Feel free to use frameworks like Bootstrap, Tailwind, or custom CSS but include any custom requirements in `requirements.txt`.
+- You are free to choose how to style the front end, but it should be functional, responsive and user-friendly.
+- The two datasets provided are only a fraction of the data that would inevitably be displayed on a page so please consider how data could be displayed intuitively. 
+- Feel free to use frameworks like Bootstrap, Tailwind, or custom CSS but include any custom requirements in the setup section of `task_description.md`.
 
 ### Bonus Task (Optional)
 
@@ -52,6 +53,8 @@ The provided `tests.py` includes:
 - A test case for when a device exists in **both** the `fda_data` and `eudamed_data` tables.
 - A test case for when a device exists only in **one** of the tables.
 - A test case for when a device is **not found** in either table.
+
+You can modify any of the existing test code or add new test cases as needed.
 
 ## Submission Requirements
 
