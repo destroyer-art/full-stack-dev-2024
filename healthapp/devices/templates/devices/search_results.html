@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Search</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Include Tailwind CSS via CDN -->
+</head>
+<body class="bg-gray-100 text-gray-700">
+    <div class="container mx-auto mt-16 p-6 max-w-lg bg-white shadow-lg rounded-lg">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">Search for Medical Devices</h1>
+        <form method="GET" action="{% url 'search_device' %}" class="mb-6">
+            <input 
+                type="text" 
+                name="device_name" 
+                placeholder="Enter device name" 
+                value="{{ query }}"
+                class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
+            >
+            <button 
+                type="submit" 
+                class="w-full py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-colors"
+            >
+                Search
+            </button>
+        </form>
+
+        {% if query %}
+        <h2 class="text-2xl font-semibold mb-4">Results for "{{ query }}"</h2>
+
+        {% if fda_results %}
+        <div class="mb-6">
+            <h3 class="text-xl font-bold mb-2">FDA Data:</h3>
+            <ul class="list-disc pl-5">
+                {% for device in fda_results %}
+                <li class="mb-1">{{ device.device_name }} - {{ device.manufacturer_name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% else %}
+        <p class="text-red-500">No results found in FDA data.</p>
+        {% endif %}
+
+        {% if eudamed_results %}
+        <div class="mb-6">
+            <h3 class="text-xl font-bold mb-2">Eudamed Data:</h3>
+            <ul class="list-disc pl-5">
+                {% for device in eudamed_results %}
+                <li class="mb-1">{{ device.device_name }} - {{ device.manufacturer_name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% else %}
+        <p class="text-red-500">No results found in Eudamed data.</p>
+        {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>
